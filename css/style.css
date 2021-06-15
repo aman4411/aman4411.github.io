@@ -1588,6 +1588,9 @@ iframe {
 	.banner, .agileinfo-dot {
 		min-height: 550px;
 	}
+	.thim-click-to-bottom{
+		display: none;
+	}
 }
 @media screen and (max-width: 640px){
 	.w3_banner_info {
@@ -1861,7 +1864,11 @@ section{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: center;
+    justify-content: center;	
+}
+
+.timeline-box:not(:first-child) {
+    margin-top: 60px;
 }
 
 .timeline-box div{
@@ -1947,5 +1954,9 @@ section{
   .thumbnail:hover {
 	cursor: pointer;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  }
+
+  .project-title{
+	  margin: 10px 0px;
   }
 
